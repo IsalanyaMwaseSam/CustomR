@@ -21,7 +21,7 @@ services:
       - "mariadb:database"
     ports:
       - "${DOCKER_PROJECT_WEB_PORT}:80"
-      - "${DOCKER_PROJECT_WEB_SSL_PORT}:443"
+      - "${DOCKER_PROJECT_WEB_SSL_PORT}:433"
 
   mariadb:
     container_name: ${DOCKER_PROJECT_CODE}_db

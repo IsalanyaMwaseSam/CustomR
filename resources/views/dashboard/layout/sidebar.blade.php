@@ -3,11 +3,10 @@
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item mr-auto">
                 <a class="navbar-brand" href="{{ url('/dashboard') }}">
-                    <div class="brand-logo"></div>
                     @if((@OTIFSolutions\Laravel\Settings\Models\Setting::get('custom_theme')==true) && (@OTIFSolutions\Laravel\Settings\Models\Setting::get('full_logo')))
                         <img src="{{ @OTIFSolutions\Laravel\Settings\Models\Setting::get('full_logo') }}" class="brand-text mb-0" width="120px">
                     @else
-                        <img src="{{ asset('/assets/svgs/logo_text.svg') }}" class="brand-text mb-0" width="120px">
+                        <h1 style="color: white;"><b>Appnomu</b><img src="{{ asset('/assets/images/icon.jpeg') }}" class="brand-text mb-0" width="80px" height="40px" style="margin-top: -10px; margin-left: -10px; font-size: 40px;"></h1>
                     @endif
                 </a>
             </li>
